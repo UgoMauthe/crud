@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Crud</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">Crud</string>
+    <string name="splashbtn">OK GOTCHA!</string>
+    <string name="title_activity_crud_main">Crud</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="are_you_sure">Are you sure ?</string>
+    <string name="connection_settings">Connection settings</string>
+    <string name="allow_untrusted_connection">Allow untrusted certificates</string>
+    <string name="accepts_any_certificate">Accepts any certificate (use at your own risk)</string>
+    <string name="timeout">Timeout</string>
+    <string name="connection_timeout">Connection timeout</string>
+    <string name="connection_error">Connection error</string>
+    <string name="error_while_connecting">Error while connecting </string>
+    <string name="unable_to_create_ssl_untrusted_connection">Unable to create SSL untrusted connection </string>
+    <string name="wait">Wait</string>
+    <string name="sending_request">Sending request…</string>
+    <string name="get">GET</string>
+    <string name="post">POST</string>
+    <string name="put">PUT</string>
+    <string name="delete">DELETE</string>
+    <string name="OK">OK</string>
+    <string name="Cancel">Cancel</string>
+    <string name="title_activity_saved_request">Crud</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="request_editor">Request editor</string>
+    <string name="load_request">Load request</string>
+    <string name="save_request">Save request</string>
+    <string name="specify_name">Specify a name</string>
+
+</resources>

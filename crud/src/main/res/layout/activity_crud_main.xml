@@ -1,0 +1,218 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_crud_main"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        tools:context="com.mauthe.crud.MainActivity$PlaceholderFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:text="Url (eg. https://domain/service)"
+            android:textColor="#888"
+
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/url"
+            android:layout_width="fill_parent"
+            android:background="@drawable/edit_text_round_corners"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#888"
+            android:layout_marginTop="10dp"
+
+            android:text="Method"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/requestType"
+            android:layout_width="fill_parent"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_round_corners"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_round_corners"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="18sp"
+                android:layout_weight="0.85"
+                android:gravity="center_vertical"
+                android:text="Headers"
+                android:textColor="#888"
+
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnAddHeader"
+
+                android:layout_width="0dp"
+                android:layout_weight="0.15"
+                android:text="+"
+                android:background="@drawable/btn_green"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_height="30sp" />
+        </LinearLayout>
+
+        <com.mauthe.crud.comp.ListViewAutoGrow
+            android:id="@+id/headerslist"
+            android:layout_width="fill_parent"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:scrollbars="none"
+
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llRequestBody"
+
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="Body"
+                android:textColor="#888"
+
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/txtRequestBody"
+                android:layout_width="fill_parent"
+                android:singleLine="false"
+                android:minLines="3"
+
+                android:text=""
+                android:background="@drawable/edit_text_round_corners"
+                android:textSize="18sp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSendRequest"
+            android:text="Send request"
+            android:textColor="#fff"
+            android:layout_width="fill_parent"
+            android:textSize="18sp"
+            android:padding="2sp"
+            android:background="@drawable/btn_green"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/llresponse"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="Response"
+                android:layout_height="match_parent" />
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/httpStatusImg"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/success"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/httpStatusText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Http 200 OK"
+
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:text="Response Headers"
+                android:textColor="#888"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txtResponseHeaders"
+                android:layout_width="fill_parent"
+                android:singleLine="false"
+                android:editable="false"
+                android:minLines="3"
+                android:text=""
+                android:background="@drawable/edit_text_round_corners"
+                android:textSize="18sp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:text="Response Body"
+                android:textColor="#888"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txtResponse"
+                android:layout_width="fill_parent"
+                android:singleLine="false"
+                android:editable="false"
+                android:minLines="8"
+                android:text=""
+                android:background="@drawable/edit_text_round_corners"
+                android:textSize="18sp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

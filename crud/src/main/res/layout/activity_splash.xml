@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.mauthe.crud.Splash">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="fill_parent"
+        android:src="@drawable/splash"
+    />
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:text="@string/splashbtn"
+        android:textColor="#fff"
+        android:layout_width="fill_parent"
+        android:textSize="22sp"
+        android:padding="15sp"
+
+        android:background="@drawable/btn_green"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>

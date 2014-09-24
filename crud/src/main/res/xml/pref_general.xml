@@ -1,0 +1,21 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+    <PreferenceCategory android:title="@string/connection_settings">
+    <CheckBoxPreference
+        android:key="allow_untrusted"
+        android:title="@string/allow_untrusted_connection"
+        android:summary="@string/accepts_any_certificate"
+        android:defaultValue="false" />
+
+    <EditTextPreference
+        android:key="connection_timeout"
+        android:inputType="number"
+        android:title="@string/timeout"
+        android:summary="@string/connection_timeout"
+        android:defaultValue="10" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
